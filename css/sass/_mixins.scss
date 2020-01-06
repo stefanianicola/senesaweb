@@ -1,0 +1,7 @@
+// get fonts
+@mixin senesa-font($weight:600,$size:12){
+    font-family: 'Encore-Sans-Pro';
+    font-weight: $weight;
+    font-style: normal;
+    font-size: $size+px;
+}

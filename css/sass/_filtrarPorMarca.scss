@@ -1,0 +1,178 @@
+.senesa-base {
+    .list-filter {
+        .title-item {
+            @include senesa-font(800,15);
+            color: $dark-blue;
+            margin-left: 10%;
+            padding: 10px 0;
+        }      
+        .ul-filter {
+            text-decoration: none;
+            list-style: none;
+            padding: 0;
+            margin-top: 50px;
+            .item-filter {
+                text-align: left;
+                padding: 2px 0;
+                a {
+                    @include senesa-font(600,15);
+                    color: $dark-blue;
+                    &:hover {
+                        padding: 3px 10px;
+                        background-color: $warning;
+                    }
+                }      
+            }
+        }
+        @include respond-to(medium) {
+            margin-left: 200px;
+        }
+    }
+    .filter {
+        background: $general-gray;
+        padding: 20px 0;
+        height: 450px;
+        position: absolute;
+        z-index: 30;
+        width: 100%;
+        display: none;
+        &.active {
+            display: block;
+        }
+        .close {
+            width: 25px;
+            height: 25px;
+            background-image: url(../img/icons/svg/-_cerrar.svg);
+        }
+        h5 {
+            @include senesa-font(800,20);
+            text-align: center;
+            color: $dark-blue;
+            border-bottom: 1px solid $dark-blue;
+            padding-bottom: 10px;
+        }
+        /*.list-filter {
+            .title-item {
+                @include senesa-font(800,15);
+                color: $dark-blue;
+                margin: 0 10%;
+                padding: 10px 0;
+            }      
+            .ul-filter {
+                text-decoration: none;
+                list-style: none;
+                .item-filter {
+                    text-align: left;
+                    padding: 2px 0;
+                    a {
+                        @include senesa-font(600,15);
+                        color: $dark-blue;
+                        &:hover {
+                            padding: 3px 10px;
+                            background-color: $warning;
+                        }
+                    }      
+                }
+            }
+        }*/
+  
+        .selec {
+            @include senesa-font(600,22);
+            color: $dark-blue;
+            padding: 5px 10px;
+            width: auto;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-128px);
+            bottom: -25px;
+        }
+    }
+    .filter-wrapper {
+        margin: 0;
+        padding-bottom: 20px;
+        .filter-title {
+            @include senesa-font(800,20);
+            padding-top: 30px;
+            padding-left: 15px;
+            padding-left: 15px;
+            @include respond-to(medium) {
+                @include senesa-font(800,30);
+
+            }
+            &::before {
+                content: '';
+                width: 7px;
+                height: 20px;
+                background: #E7A62F;
+                display: inline-block;
+                margin-right: 5px;
+                @include respond-to(medium) {
+                    height: 25px;
+                }
+            }
+        }
+        h3 {
+            @include senesa-font(600,18);
+            padding: 0 15px;
+            @include respond-to(normal) {
+                padding: 0;
+                padding-top: 40px;
+            }
+        }
+        .filter-card {
+            @include senesa-font(600,20);
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            @include respond-to(normal) {
+                display: none;
+            }
+            .filter-icon {
+                width: 25px;
+                height: 25px;
+                background-image: url(../img/icons/svg/-_filtrar.svg);
+                background-repeat: no-repeat;
+                background-position: right; 
+                padding-right: 30px;    
+                color: $warning;
+                text-decoration: none;
+                cursor: pointer;  
+            }
+        }
+    }
+    .productos {
+        .contenedor {
+            &.content-product {
+                padding: 40px 0;
+                background: $white;
+                padding-left: calc(10% - 15px);
+                padding-right: calc(10% - 15px);
+                .productos-u {
+                    padding: 0;
+                    .card-wrapper {
+                        .card-img {
+                            width: auto;  
+                        }
+                    }
+                    .list-filter {
+                        @include respond-to(normal) {
+                            @include senesa-font(600,20);
+                            margin-left: 0;
+                            padding-left: 70px;
+                        }
+                        .ul-filter{
+                            @include respond-to(normal) {
+                                margin-top: 0;
+                            }
+                            .item-filter {
+                                @include respond-to (normal) {
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

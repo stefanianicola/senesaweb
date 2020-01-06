@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Senesa</title>
+		<link rel="stylesheet" href="CSS/font/flaticon.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+	</head>
+
+	<body class="senesa-base" id="senesa-base">
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-dark p-3">
+				<div class="container">
+				
+						<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#burguer" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+							<span class="navbar-icon-close"></span>
+						</button>
+		
+						<h1 class="logo">
+							<a href="/">senesa web</a>
+						</h1>
+								
+						<div class="icon d-flex ">
+							<div class="text-white  align-items-center">
+								<a href="#" class="text-white text-decoration-none login-icon" id="login-icon"> 		
+									<span class="d-none d-lg-block">Acceso a clientes</span>
+								</a>
+								<a href="#" class="text-white text-decoration-none search-icon" id="search-icon" >
+								</a>	
+							</div>
+						</div>
+		
+						<div class="collapse navbar-collapse m-auto" id="burguer">
+							<ul class="navbar-nav text-uppercase">
+								<li class="nav-item ">
+									<a class="nav-link text-center" href="#">Inicio <span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-center" href="#">Quienes somos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-center" href="#">Productos</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-center" href="#">Contacto</a>
+								</li>			
+							</ul>
+							<div class="phone m-0">
+								<div class="row p-0 m-0">
+									<div class="col-2 col-md-4">
+										<div class="phone-icon"></div>	
+									</div>
+											
+									<div class="col-10 col-md-8 p-0">
+										<p class="m-0">4294-3516 / 0810-333-1903</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<div class="search" id="search">
+				<div class="container-fluid">
+					<div class="row m-0">
+						<div class="col">
+							<a href="#" class="close" id="close-search"></a>
+						</div>
+					</div>
+					<div class="row m-0">
+						<div class="col">
+							<h5 class="m-0 text-center">¿Qué estás buscando?</h5>	
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-9 se-search ">
+							<input type="text" class="m-0" placeholder="Buscar">
+						</div>
+						<div class="col-3 col-md-2 se-search ">
+							<button type="button" class="btn btn-warning badge badge-pill">Ir</button>
+						</div>
+					</div>		
+				</div>
+			</div>
+
+			<div class="login" id="login">
+				<div class="container-fluid">
+					<div class="row m-0">
+						<div class="col">
+							<a href="#" class="close" id="close-login"></a>
+						</div>
+					</div>
+					<div class="row ">
+						<div class="col">
+							<h5>ACCESO A CLIENTES</h5>
+						</div>
+					</div>
+					<div class="row d-block">
+						<form action="" class="form">
+							<div class="col">
+								<input type="text" placeholder="Usuario">
+							</div>
+							<div class="col">
+								<input type="password" placeholder="Contraseña">
+							</div>
+							<div class="col">
+								<a href="#">¿Olvidaste tu contraseña?</a>
+							</div>
+
+							<button type="submit" class="btn btn-warning badge badge-pill">Ingresar</button>
+
+						</form>
+					</div>
+					<div class="row ">
+						<div class="col">
+							<p class="text-center">Estimado cliente comuniquese con nosotros para solicitar los datos de acceso.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 cont-contact">
+							<div class="contenedor-form">
+								<h2>Envianos tu consulta</h2>
+								<p>Te estaremos contactando a la brevedad.</p>
+								<form action="">
+									<div class="row  formulario d-flex justify-content-between">
+										<div class="col-12 col-md-6">
+											<input type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre">
+										</div>
+										<div class="col-12 col-md-6">
+											<input type="text" class="form-control" placeholder="Apellido" name="apellido" id="apellido">
+										</div>
+									</div>
+									<div class="row  formulario">
+										<div class="col-12">
+											<input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Correo electronico">
+										</div>
+									</div>
+									<div class="row  formulario">
+										<div class="col-4">
+											<input type="text" class="form-control" placeholder="Cod. area" name="codigoArea" id="codigoArea">
+										</div>
+										<div class="col-8">
+											<input type="text" class="form-control" placeholder="Numero de telefono" name="telefono" id="telefono">
+										</div>
+									</div>
+									<div class="row formulario">
+									 <div class="col-12">
+										 <textarea name="mensaje" id="mensaje" placeholder="Mensaje" ></textarea>
+									 </div>
+									</div>
+									<div class="row">
+										<div class="col-12">
+											<p class="validacion">Introduzca el mensaje que se muestra</p>
+											
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-12 d-flex justify-content-center">
+											<button type="submit" class="btn btn-warning badge badge-pill">Enviar</button>
+										</div>
+									</div>
+								 </form>
+							</div>
+						</div>
+						<div class="col-12 col-md-6  p-0">
+							<div class="container contenedor-contacto">
+								<div class="row">
+									<div class="col-12 col-md-6">
+										<h3 class="title">Ubicacion</h3>
+										<h5 class="sub-title">Administracion y Ventas</h5>
+										<p >Lacamera 1015 <br>
+											Burzaco (1852) <br>
+											Buenos Aires, Argentina </p>
+														
+										<h5 class="sub-title">Fabrica</h5>
+										<p >Av. Hipolito Yrigoyen 13919 <br>
+											Burzaco (1852)<br>
+											Buenos Aires, Argentina</p>
+		
+									</div>
+		
+									<div class="col-12 col-md-6">
+										<h3 class= "title">Contacto</h3>
+										<h5 class="sub-title">Telefonos</h5>
+										<p >(5411) 4294-3516<br>
+											(5411) 4293-8678<br>
+											(5411) 4214-4910<br>
+											0810-333-1903</p>
+															
+										<h5 class="sub-title">WhatsApp</h5>
+										<p >15-6000-6807</p>
+		
+										<h5 class="sub-title">EMAILS</h5>
+										<p class="p-0 m-0">Administración: admin@senesaweb.com</p class="p-0 m-0">
+										<p class="p-0 m-0">Ventas: ventas@senesaweb.com</p>
+										<p class="p-0 m-0">Información : info@senesaweb.com</p>
+										<p>Gerencia: senesa@senesaweb.com</p>
+		
+										<h5 class="sub-title">SKYPE</h5>
+										<p class="p-0 m-0">Ventas.senesa</p>
+										 
+									</div>
+									<div class="col-12 col-md-6 redes"> 
+										<h3 class="title">Redes</h3>  
+										<h5 class="sub-title">FACEBOOK</h5>    
+										<a href="#" class="enlaces">Persona: /autopartes.senesa</a>
+										<a href="#" class="enlaces red-link">Página: /Senesa.Autopartes</a>
+		
+										<h5 class="sub-title instagram">INSTAGRAM</h5>
+										<a href="#" class="enlaces red-link">/Senesa.Autopartes</a>	  
+									</div>
+																  
+									   
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row m-0">
+					<div class="col-12 cont-map p-0">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.5760755557762!2d-58.398582385045025!3d-34.8166057762997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd360c46af541%3A0xfbc77cca08e3f3b9!2sAv.%20Pres.%20Hip%C3%B3lito%20Yrigoyen%2013919%2C%20B1852%20Burzaco%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1575909565050!5m2!1ses-419!2sar" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					</div>
+				</div>
+		
+				<div class="row m-0">
+					<div class="col d-flex justify-content-center">
+						<button type="button" class="btn btn-warning badge badge-pill btn-inicio">Volver al Inicio</button>
+					</div>
+				</div>
+			</section>		
+		</main>
+
+		<footer>
+            <div class="position-relative">
+                <div class="ovalo-bottom">
+                    <img src="img/icons/svg/-_footer.svg" alt="">
+                </div>
+            </div>
+            
+			<div class="foot-2">		
+				<div class="container-fluid second-foot">
+						
+					<div class="row">	
+						<div class="col-12 col-md-6 p-0 cont-logo">
+							<img src="img/icons/svg/-_senesalogo_slogan.svg" alt="">
+						</div>
+						<div class="d-none d-md-block col-md-2 clientes">
+								<a href="#" class="enlaces">Inicio</a><br>
+								<a href="#" class="enlaces">Quienes somos</a><br>	
+								<a href="#" class="enlaces">Contacto</a>
+											
+							</div>
+				
+							<div class="col col-md-2 clientes ">
+								<a href="#" class="enlaces">Acceso a clientes</a><br>
+								<a href="#" class="enlaces d-none d-md-block">Productos</a>
+									
+							</div>
+			
+							<div class="col col-md-2 redes ">
+
+								
+									<p class="d-none d-md-block text-redes m-0">REDES SOCIALES</p>
+
+									<div class="row">
+										<div class="col-6 col-md-12 p-0 icon-red">
+											<a href="#" class="enlaces"><i class="fab fa-facebook-square"></i><span class="enlaces d-none d-md-inline-block">Facebook</span></a>
+										</div>
+										
+										<div class="col-6 col-md-12 p-0">
+											<a href="#" class="enlaces"><i class="fab fa-instagram"></i><span class="enlaces d-none d-md-inline-block">Instagram</span></a>
+										</div>
+										
+									</div>
+								
+								
+							</div>			
+					</div>
+					<div class="row last-foot">		
+					</div>
+					<div class="copy-r">
+						<p class="m-0">Senesa 2019 - Copyright © Todos los Derechos Reservados.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/jquery-3.4.1.min.js"> </script>
+    	<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>	

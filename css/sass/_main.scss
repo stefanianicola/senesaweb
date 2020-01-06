@@ -1,0 +1,303 @@
+.senesa-base {
+    main {
+        .search,
+        .login {
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+            padding: 20px 0;
+            background: $general-gray;
+            @include senesa-font();
+            display: none;
+            
+            .close {
+                width: 25px;
+                height: 25px;
+                opacity: 1;
+                text-align: right;
+                background-image: url(../img/icons/svg/-_cerrar.svg);
+            }
+            
+            h5 {
+                @include senesa-font(800,20);
+                text-align: center;
+            }
+           
+            .se-search {
+                padding: 20px 0;
+                @include respond-to(medium) {
+                    margin: 0 auto;
+                    text-align: center;
+                }
+                input {
+                    background: transparent;
+                    border: none;
+                    border-bottom: 1px solid $dark-blue;
+                    padding-right: 70px;
+                    @include senesa-font(300,15);
+                    @include respond-to(medium) {
+                        padding-right: 65%;
+                        @include senesa-font(300,20);
+                    }
+                }
+                .btn {
+                    padding: 5px 15px;
+                    margin-left: 10px;
+                    @include senesa-font(600,18);
+                    @include respond-to(medium) {
+                        padding: 10px 25px;
+                    }
+                }
+            }
+            .form {
+                display: block;
+                input {
+                    border: 1px solid $dark-blue;
+                    padding: 10px;
+                    width: 100%;
+                    margin: 10px 0;
+                }
+                a {
+                    color: $text;
+                    text-align: left;
+                }
+                .btn {
+                    width: 80%;
+                    margin: 10px auto;
+                    padding: 10px;
+                    display: block;
+                    @include senesa-font(800,16);
+                }
+                p {
+                    @include senesa-font(600,10);
+                }     
+            }
+        }
+        .login {
+            @include respond-to(medium) {
+                max-width: 400px;
+                right: 10%;
+                z-index: 20;
+            }
+        }
+        
+        .banner {
+            margin: 0;
+            .text-banner{
+                width: 100%;
+                text-align: center;
+                padding-top: 150px;
+                position: absolute;
+                display: block;
+                @include respond-to(small) {
+                    padding-top: 200px;
+                }
+                @include respond-to(medium) {
+                    padding-top: 60px;
+                }
+                h2 {
+                    @include senesa-font(900,50);
+                    @include respond-to(small) {
+                       @include senesa-font(900,70);
+                   }
+                   @include respond-to(medium) {
+                    @include senesa-font(900,40);
+                    }
+                    @include respond-to(normal) {
+                        @include senesa-font(900,100);  
+                    }
+
+                }
+                p {
+                   @include senesa-font(900,20);
+                   @include respond-to(small) {
+                       @include senesa-font(900,35);
+                   } 
+                   @include respond-to(medium) {
+                    @include senesa-font(900,25);
+                    }
+                    @include respond-to(normal) {
+                        @include senesa-font(900,30);  
+                    }
+                }
+            }
+           
+            .slideshow {
+                li {
+                    width: 19px;
+                    height: 0;
+                    margin: 15px;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    background-color: transparent;
+                    padding: 0;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        height: 30px;
+                        width: 29px;
+                        border: 1px solid white;
+                        display: block;
+                        border-radius: 100%;
+                        top: -15px;
+                        position: absolute;
+                        left: -5px;
+                    }
+                    &.active {
+                        background: $warning;
+                    } 
+                
+                }
+            }
+        }
+        .marcas {
+            margin: 30px 0;
+            .carousel-inner {
+                padding: 0 20px;
+            }
+            .carousel-inner .carousel-item-right.active,
+            .carousel-inner .carousel-item-next {
+                transform: translateX(33.3%); // en tablet para arriba cambia a 16.66%
+                    @include respond-to(medium) {
+                        transform: translateX(16.66%);
+                    }
+                }
+
+            .carousel-inner .carousel-item-left.active, 
+            .carousel-inner .carousel-item-prev {
+                transform: translateX(-33.3%); // en tablet para arriba cambia a 16.66%
+                    @include respond-to(medium) {
+                        transform: translateX(-16.66%);
+                    }
+                }
+            
+            .carousel-inner .carousel-item-right,
+            .carousel-inner .carousel-item-left{ 
+                transform: translateX(0);
+                }
+            .carousel-item-marcas {
+                img {
+                    padding: 0 10px;
+                }
+            }
+            .carousel-control-prev{
+                background-image: url(../img/icons/svg/-_slider1.svg);
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;
+                margin: auto 0;
+            }
+            .carousel-control-next {
+                background-image: url(../img/icons/svg/-_slider2.svg);
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;
+                margin: auto 0;
+                
+            }
+
+        }       
+        .productos {
+            position: relative;
+          
+            .contenedor {
+                width: 100%;
+                height: auto;
+                padding-bottom: 50px;
+                background: $general-gray;
+                .wrapper-title {
+                    @include respond-to(normal) {
+                        margin-top: -25px;
+                        margin-bottom: 30px;
+                    }
+                    h2 {
+                        @include senesa-font(900,25);
+                        color: $warning;  
+                    }
+                    p {
+                       @include senesa-font(600,15);   
+                    }
+
+                }
+                
+                .productos-u {
+                    margin: 0;
+                    @include senesa-font(600,15);
+                    @include respond-to(normal) {
+                        padding-left: calc(10% - 15px);
+                        padding-right: calc(10% - 15px);
+                    }
+                    .card-wrapper {
+                        margin-bottom: 50px;
+                        .card-img{
+                            border: 1px solid $text;
+                            position: relative; 
+                            margin: 0 auto; 
+                            width: auto; 
+                            height: 260px; 
+                            background-size: contain; 
+                            background-repeat: no-repeat; 
+                            background-position: center; 
+                            background-color: #fff;
+                            @include respond-to(small) {
+                                height: 300px;
+                            }
+                            @include respond-to(medium) {
+                                height: 200px;
+                            }  
+                            .destacado {
+                                background-image: url(../img/icons/svg/-_destacado.svg);
+                                background-repeat: no-repeat;
+                                position: absolute;
+                                width: 60px;
+                                height: 53px;
+                                bottom: 0;
+                                right: 0;
+                            }  
+                        }
+                        .text-card {
+                            h3 {
+                                @include senesa-font(900,18);
+                                text-align: center;
+                                margin-top: 15px;
+                                min-height: 40px;
+                                @include respond-to(medium) {
+                                    @include senesa-font(900,16);
+                                }
+                            } 
+                            p {
+                                @include senesa-font(300,14);
+                                    @include respond-to(medium) {
+                                        @include senesa-font(300,12);
+                                    }
+                                &.text-cat {
+                                    color: $text;
+                                }
+                            }  
+                            .btn {
+                                width: 60%;
+                                padding: 10px;
+                                @include senesa-font(600,21);
+                                @include respond-to(medium) {
+                                    @include senesa-font(600,18);
+                                    padding: 5px;
+                                }
+                            }
+                        }
+                    }
+                    .catalogo {
+                        width: 70%;
+                        margin: 0 auto;
+                        padding: 10px;
+                        @include senesa-font(800,23);
+                        @include respond-to(medium) {
+                            width: 30%;
+                            padding: 5px;
+                        }    
+                    } 
+                }  
+            }    
+            
+        }
+    }
+}

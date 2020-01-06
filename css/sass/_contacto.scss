@@ -1,0 +1,118 @@
+.cont-contact {
+        padding-top: 10%;
+        background: $general-gray;
+        text-align: center;
+        @include respond-to(medium) {
+            padding-left: calc(10% - 15px);
+        }
+        .contenedor-form {
+            h2 {
+                @include senesa-font(800,25);
+                &::before {
+                    content: '';
+                    width: 7px;
+                    height: 20px;
+                    background: #E7A62F;
+                    display: inline-block;
+                    margin-right: 5px;
+                }   
+            }
+            p {
+                @include senesa-font(600,15);
+            }
+            form {
+                .formulario {
+                    input {
+                        border: 1px solid $dark-blue;
+                        border-radius: inherit;
+                        margin: 5px 0;
+                        padding: 5px;
+                    }
+                    textarea {
+                        width: 100%;
+                        height: 100%;
+                        border: 1px solid $dark-blue;
+                        margin: 5px 0;
+                        padding: 5px;
+                    }    
+                }
+                .validacion {
+                    @include senesa-font(300,15);
+                    color: $text;
+                    margin-top: 5%;
+                }
+                .btn {
+                    @include senesa-font(800,16);
+                    width: 90%;
+                    padding: 10px 100px;
+                    margin-top: 15%;
+                    margin-bottom: 15%;
+                }
+            }
+        }
+    }
+.contenedor-contacto {
+    background: #F1F1F5;
+    padding-left: 20%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    
+    @include respond-to(small) {
+        max-width: 100%;
+    }
+    @include respond-to(medium) {
+        padding-left: 20px;
+        padding-bottom: 30%;
+        padding-right: calc(10% - 15px)
+    }
+   
+    .title {
+        @include senesa-font(900,25);
+        padding: 5px;
+        margin: 15px 0;
+        margin-top: 20px;
+        &::before {
+            content: '';
+            width: 7px;
+            height: 20px;
+            background: #E7A62F;
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+    .sub-title {
+        @include senesa-font(800,16);
+        color: $warning;   
+    }
+    p {
+        @include senesa-font(600,15);
+    }
+    .redes {
+        .instagram {
+            padding-top: 20px;
+        }
+        @include respond-to(medium) {
+            position: absolute;
+            z-index: 10;
+            margin-top: 350px;
+           
+        }
+        @include respond-to(normal) {
+            position: absolute;
+            z-index: 10;      
+        }
+        a {
+            @include senesa-font(600,15);
+            text-decoration: none;
+            color: $dark-blue;   
+        }
+    }
+}
+.cont-map {
+    width: 100%;
+    iframe {
+        width: 100%;
+        height: 450px;
+    }
+}
+

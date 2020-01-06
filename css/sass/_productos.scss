@@ -1,0 +1,36 @@
+.senesa-base {
+    .filter-mark {
+        //padding-left: calc(10% - 15px);
+        //padding-right: calc(10% - 15px);
+        h3 {
+            @include senesa-font(800,25);
+            margin-top: 5%;
+            @include respond-to(normal) {
+                @include senesa-font(800,30);
+            }
+            &::before {
+                content: '';
+                width: 7px;
+                height: 20px;
+                background: #E7A62F;
+                display: inline-block;
+                @include respond-to(normal) {
+                    height: 25px;
+                }
+            }
+        }
+        .enlaces {
+            padding: 30px 0;
+            margin-bottom: 50px;
+            .filter {
+               img {
+                   width: 100%;
+                   height: auto;
+               }
+                
+            }
+        }
+
+    }
+  
+}

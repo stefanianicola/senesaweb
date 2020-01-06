@@ -1,0 +1,188 @@
+footer {
+    
+    .foot {
+        background: #011023;
+        position: relative;
+        width: 100%;
+        height: auto;
+        .map-mb {
+            iframe {
+                width: 100%;
+                height: 400px;
+            }
+        }
+        @include respond-to(normal) {
+            padding: 0;     
+        }
+        .foot-one {
+            padding: 30px 40px;
+            text-align: left;
+            @include respond-to(small) {
+                padding-left: 150px;    
+            }
+            @include respond-to(medium) {
+                padding: 0; 
+                padding-left: calc(10% - 15px);
+                padding-right: calc(10% - 15px);
+                height: 320px;
+            }
+            @include respond-to(normal) {
+                padding-left: 0;
+                padding-right: 0;
+                height: 370px;
+            }
+            .text {
+                @include respond-to(normal) {
+                    padding-left: calc(10% - 15px);
+                }
+            }
+            .info-wrapper {
+                h3 {
+                    color: $white;
+                    @include senesa-font(900,35);
+                    margin: 0 auto;
+                    padding-top: 20px;
+                    &::before {
+                        content: '';
+                        width: 7px;
+                        height: 25px;
+                        background: #E7A62F;
+                        display: inline-block;
+                    }
+                    @include respond-to(normal) {
+                        @include senesa-font(900,25);
+                    }
+                }
+                h4 {
+                    padding-top: 10px;
+                    @include senesa-font(800,17);
+                    color: $warning;   
+                }
+                h5{
+                    @include senesa-font(800,20);
+                    color: $white;
+                    padding-top: 10px;  
+                }
+                p {
+                    @include senesa-font(600,15);
+                    color: $white;
+                    padding: 5px;   
+                }
+                .contact-text {
+                    @include respond-to(medium) {
+                        padding-left: 100px;
+                    } 
+                    @include respond-to(normal) {
+                        padding-left: 0;
+                    }   
+                }
+            }
+            .contenedor-mapa {
+                height: 370px;
+                overflow: hidden;
+                .map {
+                    width: 100%;
+                    height: 370px;
+                }   
+            }         
+        }   
+        .btn-inicio {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            display: block;
+            padding: 13px;  
+            font-size: 20px;          
+            position: absolute;
+            left: 50%;
+            transform: translateX(-25px);
+            z-index: 5;
+            bottom: -25px;
+            background: $warning;
+        }
+        .ovalo-bottom {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+          
+   .foot-2 {
+       @include senesa-font(600,14);
+       .second-foot{
+        background: $general-gray;
+        padding-top: 30px;
+        @include respond-to(medium) {
+            padding-left: calc(10% - 15px);
+            padding-right: calc(10% - 15px);
+        }
+            .cont-logo {
+                text-align: center;
+                @include respond-to(medium) {
+                    text-align: inherit;
+                }
+                img {       
+                    padding: 30px 15px;
+                    width: auto;
+                    height: 120px;    
+                }
+            }
+            .clientes {
+                text-align: center;
+                padding-top: 10px;
+                @include respond-to(medium) {
+                    padding-top: 25px;
+                    text-align: inherit;
+                }
+            }
+            .enlaces {
+                text-decoration: none;
+                color: #000;
+                text-align: left;    
+                i {
+                    font-size: 40px;
+                    color: $dark-blue;
+                    padding: 0 10px;
+                    @include respond-to(medium) {
+                        font-size: 15px;
+                    }
+                }             
+            } 
+            .redes {
+                .text-redes {
+                    @include respond-to(medium) {
+                        @include senesa-font(800,11);
+                        padding-top: 25px;
+                        transform: translateX(-5px);    
+                    }     
+                }
+                .icon-red {
+                    text-align: end;
+                    @include respond-to(medium) {
+                        text-align: inherit;
+                    }
+                }    
+            }
+            .last-foot {
+                padding: 10px 0;
+                border-bottom: 1px solid $outline-img;
+                @include respond-to(medium) {
+                    padding: 0;
+                }
+            }
+           .copy-r {
+               @include senesa-font(300,10);
+               color: $outline-img;
+               text-align: center;
+               padding: 10px;     
+           }        
+        }   
+    }
+}
+        
+
+        
+   
+
+
+     

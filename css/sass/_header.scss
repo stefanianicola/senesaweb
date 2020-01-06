@@ -1,0 +1,157 @@
+.senesa-base {
+    header {
+        .navbar {
+            background: $dark-blue;
+            .container {
+                .navbar-toggler {
+                    border: none;
+                }
+                h1 {
+                    &.logo {
+                        text-indent: -9999px;
+                        background-image: url('../img/icons/svg/-_senesalogo.svg');
+                        background-repeat: no-repeat;
+                        width: 140px;
+                        height: 40px;
+                        margin: 0;
+                        z-index: 15;
+                        @include respond-to(normal) {
+                            position: absolute;
+                            left: 10%;
+                        }
+                    }
+                }
+                .navbar-toggler {
+                    .navbar-icon-close {
+                        display: block;
+                        width: 1.5em;
+                        height: 1.5em;
+                        position: relative;
+                        &::after {
+                            content: '';
+                            width: 25px;
+                            height: 25px;
+                            background-image: url(../img/icons/svg/-_cerrar-mob.svg);
+                            position: absolute;
+                            font-size: 35px;
+                            left: 5px;
+                        }
+
+                    }
+                    .navbar-toggler-icon {
+                        display: none;
+                    }
+                    &.collapsed {
+                        .navbar-icon-close {
+                            display: none;
+                        }
+                        .navbar-toggler-icon {
+                            display: block;
+                        }
+                    }
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                .navbar-collapse {
+                    position: absolute;
+                    width: 100%;
+                    left: 0px;
+                    top: 70px;
+                    z-index: 10;
+                    background: $dark-blue;
+                    @include respond-to(normal) {
+                      position: inherit;
+                    }
+                    
+                    ul {
+                        margin: auto;
+                        @include senesa-font(800,25);
+                        @include respond-to(normal) {
+                            @include senesa-font(800,14);
+                        }
+                        li {
+                            a {
+                                color: #fff;
+                                &:hover {
+                                    color: $warning;
+                                }
+                            }     
+                        }        
+                    }
+                    .phone {
+                        .phone-icon {
+                            width: 20px;
+                            height: 20px;
+                            background-image: url(../img/icons/svg/-_phone.svg);
+                            background-repeat: no-repeat;
+                            float: right;
+                            margin-top: 5px;
+                        }
+                        width: 100%;
+                        background: #fff;
+                        color: #000;
+                        margin: auto; 
+                        @include senesa-font(600,19);
+                        padding: 10px 0;
+                        @include respond-to(normal) {
+                            display: none;
+                        }
+                    }
+                }
+                
+                .icon {
+                    text-align: right;
+                    @include respond-to(normal) {
+                        position: absolute;
+                        right: 10%;
+                        z-index: 15;
+                    }
+                    a {
+                        display: inline-block;
+                        width: 25px;
+                        height: 25px;
+                        margin: 0 5px;
+                        &.login-icon {
+                            background-image: url(../img/icons/svg/-_login1.svg);
+                            background-repeat: no-repeat;
+                            @include respond-to(normal) {
+                                float: left;
+                                width: auto;   
+                            }
+                            span {
+                                @include respond-to(normal) {
+                                    padding-left: 30px;
+                                    vertical-align: middle;
+                                    padding-top: 5px;
+                                }
+                            }
+                            &.active {
+                                width: 25px;
+                                height: 25px;
+                                background-image: url(../img/icons/svg/-_login2.svg);
+                                background-repeat: no-repeat;
+                                @include respond-to(normal) {
+                                    float: left;
+                                    width: auto;   
+                                }
+
+                            }
+                        }
+                        &.search-icon {
+                            background-image: url(../img/icons/svg/-_buscar1.svg);
+                            background-repeat: no-repeat;
+                            &.active {
+                                //display: block;
+                                width: 25px;
+                                height: 25px;
+                                background-image: url(../img/icons/svg/-_buscar2.svg);
+                                background-repeat: no-repeat;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
